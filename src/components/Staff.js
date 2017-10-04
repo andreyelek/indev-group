@@ -2,7 +2,7 @@ import React from "react";
 import EditInfo from "./EditInfo";
 //import PropTypes from 'prop-types'
 const coverterTime = str => {
-  let monthNames = [
+  const monthNames = [
     "января",
     "февраля",
     "марта",
@@ -16,7 +16,7 @@ const coverterTime = str => {
     "ноября",
     "декабря"
   ];
-  let date = str.substring(0, 10).split("-");
+  const date = str.substring(0, 10).split("-");
   return date[2] + " " + monthNames[date[1] - 1] + " " + date[0];
 };
 

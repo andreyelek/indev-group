@@ -18,7 +18,7 @@ class EditInfo extends Component {
   }
 
   converToISOFormat(serverDate) {
-    let date = new Date(Date.parse(serverDate));
+    const date = new Date(Date.parse(serverDate));
     return date.toISOString();
   }
 
@@ -34,7 +34,7 @@ class EditInfo extends Component {
 
   handleSubmit(e) {
     const { actions, id } = this.props;
-    let errors = this.state.errors;
+    const errors = this.state.errors;
     if (checkError(errors)) return false;
     actions.editWorkerInfo(id, this.getInfo());
     return false;
