@@ -44,7 +44,7 @@ const isFetching = (state = true, action) => {
   }
 };
 
-const editElementId = (state = "1", action) => {
+const editElementId = (state = 1, action) => {
   switch (action.type) {
     case EDIT_ID:
       return action.id;
