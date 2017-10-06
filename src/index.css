@@ -193,6 +193,3 @@ input:-webkit-autofill {
 .delete:hover,.cancell:hover{
     background: rgb(216,219,221);
 }
-.editWorker label input:focus  div{
-    color: rgb(33,150,243);
-}

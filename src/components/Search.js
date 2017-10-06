@@ -2,8 +2,7 @@
 
 import React from "react";
 
-const Search = ({ actions, str }) => {
-  return (
+const Search = ({ actions, str }) => (
     <div className="searchWorker">
       <input
         ref={input => (this.input = input)}
@@ -12,6 +11,5 @@ const Search = ({ actions, str }) => {
         defaultValue={str}
       />
     </div>
-  );
-};
+)
 export default Search;

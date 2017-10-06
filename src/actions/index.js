@@ -53,7 +53,8 @@ export const fetchStaffInfo = () => async dispatch => {
   const API_staff =
     "http://avengers.view.indev-group.eu/test_api/staff/?query=";
   const API_posts = "http://avengers.view.indev-group.eu/test_api/posts/";
-  const [staff, posts] = await Promise.all([fetchInfo(API_staff), fetchInfo(API_posts)]);
+  const staff = await fetchInfo(API_posts)
+  const posts = await fetchInfo(API_staff)
   dispatch(receiveStaffInfo(staff, posts));
 };
 
