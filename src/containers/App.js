@@ -11,13 +11,7 @@ class App extends Component {
     this.props.actions.getStaffInfo();
   }
 
-  /*componentWillReceiveProps(nextProps) {
-    if (nextProps.selectedReddit !== this.props.selectedReddit) {
-      const { dispatch, selectedReddit } = nextProps
-      dispatch(getStaff(selectedReddit))
-    }
-  }
-  */
+
   render() {
     const {
       workers,
@@ -56,13 +50,10 @@ const filterElements = (workers, str) => {
 };
 
 const mapStateToProps = state => {
-  const { workers, posts, editElementId, isFetching, workerName } = state;
+  const {workers, workerName} = state
   return {
-    workers: filterElements(workers, workerName),
-    posts,
-    editElementId,
-    isFetching,
-    workerName
+    ...state,
+    workers: filterElements(workers, workerName)
   };
 };
 const mapDispatchToProps = dispatch => ({
