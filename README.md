@@ -1,7 +1,7 @@
 # React app
 
 [Specification](http://avengers.view.indev-group.eu)<br>
-[Link to gh-pages ](andreyelek.github.io/indev-group)<br>
+[Link to gh-pages](http://andreyelek.github.io/indev-group)<br>
 This project was bootstrapped with Create React App.
 
 ## Available Scripts
